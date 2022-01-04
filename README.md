@@ -1,9 +1,9 @@
 # DockerTestForPipelines
 Собираем и Деплоим Docker Image из GitHub через Cloud Build в Cloud Run
 
-1. В MANAGEMENT, берем email аккаунта xxxxxxxx@cloudbuild.gserviceaccount.com
+1. В проекте MANAGEMENT, берем email аккаунта xxxxxxxx@cloudbuild.gserviceaccount.com (в настройках Cloud Build).
 
-2. В STAGING и PROD добавить аккаунт из п.1 как princial в IAM и добавить Roles:
+2. В проектах STAGING и PROD добавляем аккаунт из п.1 как princial в IAM и добавить Roles:
 
 - Cloud Run Admin -	roles/run.admin
 - Service Account User -	roles/iam.serviceAccountUser
