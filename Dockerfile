@@ -6,7 +6,7 @@ RUN apt-get update -y
 RUN apt-get install apache2 -y
 
 RUN echo 'Docker Image on CloudRun of Ihor Ponomarov!<br>'   > /var/www/html/index.html
-RUN echo '<b><font color="magenta">Version 1.6</font></b>' >> /var/www/html/index.html
+RUN echo '<b><font color="magenta">Version 1.7</font></b>' >> /var/www/html/index.html
 
 CMD ["/usr/sbin/apache2ctl", "-D","FOREGROUND"]
 EXPOSE 80
